@@ -45,6 +45,7 @@ class MainActivity : ComponentActivity() {
                 var classifications by remember {
                     mutableStateOf(emptyList<Classification>())
                 }
+
                 val analyzer = remember {
                     LandmarkImageAnalyzer(
                         landmarkClassifier = TfLiteLandmarkClassifier(
